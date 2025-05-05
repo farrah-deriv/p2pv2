@@ -33,8 +33,8 @@ const CallbackPage = () => {
 
                 localStorage.setItem('authToken', selectedAuthToken);
 
-                history.replaceState(null, '', '/buy-sell');
-                window.location.href = '/buy-sell';
+                history.replaceState(null, '', '/buy-sell?callback=true');
+                window.location.href = '/buy-sell?callback=true';
             }}
         />
     );
